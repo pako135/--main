@@ -1,18 +1,5 @@
 //import axios from 'axios';
-var interval = self.setInterval("clock()", 1000);
-function clock(){
-  var date = new Date();
-  var hourOffset = 3;
-  date.setUTCHours(date.getUTCHours(), date.getUTCMinutes());
-  var time = date.getTime();
-  date.setUTCFullYear(date.getUTCFullYear(), 2, 22);
-  var dstStart = date.getTime();
-  date.setUTCFullYear(date.getUTCFullYear(), 8, 22);
-  var dstEnd = date.getTime();
-  if(time > dstStart && time < dstEnd)hourOffset = 3;
-  date.setUTCHours(date.getUTCHours()+hourOffset, date.getUTCMinutes()+30);
-  var output = date.getUTCHours()+":"+date.getUTCMinutes()+":"+date.getUTCSeconds();    document.getElementById("clock").innerHTML=output;
-}
+
 const axios = require('axios/dist/browser/axios.cjs'); // browser
 const axios = require('axios/dist/node/axios.cjs'); // node
 function handleSignIn(event) {
