@@ -1,0 +1,9 @@
+@font-face {
+    font-family: roya;
+    src: url(/src/BRoya.ttf);
+    
+}
+#farsiText:after {
+    content: "\002E"; /* Unicode character for period */
+  }
+ 

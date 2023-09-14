@@ -1,0 +1,174 @@
+@media screen and (max-width: 750px) {
+  .footer-1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  .main-feedback {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-feedback {
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 750px) {
+  .accordion-flush {
+    display: none;
+  }
+  .end {
+    height: 27.5rem;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .end {
+    height: 29rem;
+  }
+}
+@media screen and (max-width: 652px) {
+  .end {
+    height: 34rem;
+  }
+}
+@media screen and (max-width: 3840px) {
+  .lottie5 {
+    width: 3840px;
+  }
+}
+@media screen and (max-width: 2048px) {
+  .lottie5 {
+    width: 2048px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .lottie5 {
+    width: 1920px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .search-bar .input {
+    display: none;
+  }
+  .search-bar .input :focus {
+    width: 60vw;
+  }
+  .search-bar .input :hover {
+    width: 55vw;
+  }
+  .mobile-tabs {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .mobile-tabs .drops {
+    display: flex;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .mobile-tabs .drops .dropdown-content {
+    top: 100%;
+    right: 2%;
+  }
+  .mobile-tabs .drops .dropdown-content2 {
+    top: 100%;
+    right: 7%;
+  }
+  .mobile-tabs .drops .dropdown-content3 {
+    top: 100%;
+    right: 28%;
+  }
+  .mobile-tabs .drops .dropdown-content4 {
+    top: 100%;
+    right: 50%;
+  }
+  .top-nav {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1FR;
+    justify-items: center;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1FR;
+  }
+  .drops {
+    display: none;
+  }
+  .mobile-tabs .input {
+    display: none;
+  }
+}
+@media screen and (min-width: 950px) {
+  .top-nav {
+    overflow: hidden;
+  }
+  .search-bar .input {
+    width: 25vw;
+  }
+  .mobile-tabs #collapseTwo {
+    display: none;
+  }
+  .mobile-tabs .input {
+    display: none;
+  }
+  .input1 {
+    display: none;
+  }
+  .mobile-tabs .drops {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cardsx .cardx {
+    width: 100%;
+  }
+  .gm-a {
+    padding-left: 5.5vw;
+    padding-right: 5.5vw;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .mobile-tabs {
+    display: block;
+  }
+  .mobile-tabs .drops {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile-tabs .drops .dropdown-content {
+    display: none;
+  }
+  .mobile-tabs .drops .dropdown-content2 {
+    display: none;
+  }
+  .mobile-tabs .drops .dropdown-content3 {
+    display: none;
+  }
+  .mobile-tabs .drops .dropdown-content4 {
+    display: none;
+  }
+  .mobile-tabs .input[type=text]:focus {
+    width: 70vw;
+  }
+  .mobile-tabs .input {
+    margin-right: 9vw;
+    width: 55vw;
+    display: block;
+  }
+  .intro {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 500px) {
+  #collapseTwo {
+    display: none;
+  }
+}/*# sourceMappingURL=query.css.map */
