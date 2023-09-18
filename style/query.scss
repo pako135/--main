@@ -19,22 +19,16 @@
     .accordion-flush{
         display: none;
     }
-    .end{
-        height: 27.5rem;
-    }
+    
     
 
 }
 @media screen and (min-width:1300px){
-    .end{
-        height: 29rem;
-    }
+    
     }
 
 @media screen and (max-width:652px){
-    .end{
-        height: 34rem;
-    }}
+    
     @media screen and (max-width:3840px){
         .lottie5{
             width:3840px ;
@@ -52,9 +46,18 @@
         width:1920px ;
     }
 
-}
+}}
+@media screen and (max-width:1100px) {
+    .footersvg{
+        width: max-content;
+        float: right;
+    }}
+    @media screen and (min-width:1100px) {
+        .footer-tabs{
+            height: max-content;
+        }}
 @media screen and (max-width:950px) {
-    
+   
 
     .search-bar{
         .input{

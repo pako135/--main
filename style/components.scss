@@ -35,19 +35,7 @@ svg{
     margin-right: 1vw;
     transition: 0.5s;
   }
-  .social {
-    left: 2%;
-    z-index: 5;
-    bottom: 2%;
-    position: fixed;
-    
-    background-color: #00c6c45c;
-    border: 6px solid #007be6;
-    PADDING: 12px;
-    border-radius: px;
-    box-shadow: 0px 0px 10px 3px #36dbe5;
-    
-  }
+  
   .myCard {
     background-color: transparent;
     width: 190px;
@@ -147,23 +135,26 @@ svg{
     border-radius: 8px;
 
   }
-  .social{
-    left: 1rem;
+  
+  .social {
+    width: 5%;
+    left: 0.5rem;
     z-index: 5;
-    bottom: 2%;
+    bottom: 1%;
     position: fixed;
     background-color: rgba(0, 198, 196, 0.3607843137);
-    border: 6px solid #007be6;
-    padding: 12px;
-    border-radius: 12px;
+    border: 2px solid #0098e6;
+    padding: 2px;
+    border-radius: 56px;
     box-shadow: 0px 0px 10px 3px #36dbe5;
+}
+
   
-  
-  }
   .time{
+    font-weight: 700;
     z-index: 3;
-      position: fixed;
-    background-color: #a5eded8c;
+    position: fixed;
+    background-color: rgba(165, 237, 237, 0.5490196078);
     padding-top: 6rem;
     top: 0;
     left: 5vw;
@@ -173,6 +164,7 @@ svg{
     padding-left: 2rem;
     padding-right: 2rem;
     font-size: 31px;
+    color: #004949;
     
   }
   .hamburger{

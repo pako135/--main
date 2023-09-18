@@ -17,33 +17,33 @@
   .accordion-flush {
     display: none;
   }
-  .end {
-    height: 27.5rem;
-  }
 }
-@media screen and (min-width: 1300px) {
-  .end {
-    height: 29rem;
-  }
-}
-@media screen and (max-width: 652px) {
-  .end {
-    height: 34rem;
-  }
-}
-@media screen and (max-width: 3840px) {
+@media screen and (max-width: 652px) and (max-width: 3840px) {
   .lottie5 {
     width: 3840px;
   }
 }
-@media screen and (max-width: 2048px) {
+@media screen and (max-width: 652px) and (max-width: 2048px) {
   .lottie5 {
     width: 2048px;
   }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 652px) and (max-width: 1920px) {
   .lottie5 {
     width: 1920px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .footersvg {
+    width: -moz-max-content;
+    width: max-content;
+    float: right;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .footer-tabs {
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 @media screen and (max-width: 950px) {

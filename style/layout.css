@@ -164,10 +164,12 @@ body {
   padding-left: 4%;
   padding-right: 4%;
   padding-top: 4%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
   gap: 8px;
   row-gap: 100PX;
+  justify-content: space-around;
   justify-items: center;
 }
 
@@ -376,39 +378,7 @@ body {
 
 .end {
   overflow: hidden;
-  height: 36rem;
   background-color: #18CCD9;
-}
-
-.last {
-  background-color: rgba(248, 255, 255, 0.22);
-  text-align: right;
-  position: sticky;
-  z-index: 1;
-  padding: 3%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  grid-template-rows: 5fr 0.25fr 0.5fr;
-  gap: 4px;
-  display: grid;
-  align-items: start;
-}
-.last hr {
-  height: 2px;
-  color: #212121;
-}
-.last a {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #3c3b3b;
-  transition: 300ms;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.last a:hover {
-  text-shadow: 2px 2px 2px rgb(24, 204, 217);
-  color: black;
 }
 
 .mc {
@@ -541,8 +511,8 @@ body {
 }
 
 .ti-in {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .ti-in img {
   max-width: 800px;
@@ -595,4 +565,20 @@ body {
 
 .offcanvas-body {
   background-color: rgba(217, 215, 215, 0.27);
+}
+
+.footersvg {
+  opacity: 0.2;
+}
+
+.footer-tabs {
+  color: black;
+  max-height: 450px;
+  background-color: #323232;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=layout.css.map */

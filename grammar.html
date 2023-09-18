@@ -6,908 +6,245 @@
 <html
 lang="fa-IR"
 xmlns="http://www.w3.org/1999/xhtml" >
-    <head>
-        <meta charset="utf-8" >
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>گرامرینو آموزش زبان رایگان برای همه</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/style/style1.css">
-        <script src="./script/script.js"></script>
-        <style>
-            #farsiText:after {
-  content: "\002E"; /* Unicode character for period */
-}
-        </style>
-       
-        
-       
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>گرامرینو آموزش زبان رایگان برای همه</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/style1.css">
+    <script src="/script/index.js"></script>
+    <script src="/script/lottie-main.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="/script/user.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" ></script>
+    
+   
+    
+   
+</head>
+<body>
 
-       <div id="header" class="heading">
-       
+    <div id="header" class="heading">
+   
         <div class="top-nav">
           
             <div id="logo" class="icon">
                 <img src="https://cdn.discordapp.com/attachments/1094366052516900874/1131903672767483954/finale_3.gif" alt="icon" width="184" >
                
             </div>
+           
             
-            <div id="input" class="input1">
-                <input type="text" name="text" placeholder="... جستجو" class="input">
-            </div>
-            
-            <div id="hamburger" class="hamburger">
-                <div class="accordion-item">
-                   
-                      <button class="accordion-button2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                            <path d="M20 7L4 7" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            <path opacity="0.5" d="M20 12L4 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            <path d="M20 17L4 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-                            </svg>
-                      </button>
-                   
-                   
-                  </div>
-               
-                
-            </div>
             <div id="search" class="search-bar">
                 <input type="text" name="text" placeholder="... جستجو" class="input">
 
             </div>
-            
-            <div id="dictionary" class="dictionary">
-                <div class="drops">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 11L12 17L10.25 15.5M5 11L7.33333 13" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5 7L12 13L13.75 11.5M19 7L16.6667 9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <img src="./src/Comp_1.gif" alt="arrow down" width="24px" height="24px">
-                       <span>دیکشنری</span>
-                       <div class="dropdown-content5">
-                        <div id="menu tabs" class="category">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                <g>
-                                    <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                </g>
-                                </svg>
-                            <p>... به زودی </p>
-                            
-                            
-                        </div>
-                        <hr>
-                        
-                        
-                       
-                        </div>
+            <div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z" fill="#000000"/>
+                    </svg></button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                 <div class="offcanvas-header">
+<h5 class="offcanvas-title" id="offcanvasRightLabel">گزینه ها</h5>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-            </div>
-            <div id="assessment" class="assessment">
-                <div class="drops">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 11L12 17L10.25 15.5M5 11L7.33333 13" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5 7L12 13L13.75 11.5M19 7L16.6667 9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <img src="./src/Comp_1.gif" alt="arrow down" width="24px" height="24px">
-                        <span>آزمون</span>
-                        <div class="dropdown-content4">
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>جامع </p>
-                                
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>لیسنینگ </p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>ریدینگ </p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p> رایتینگ</p>
-                            
-                                
-                            </div>
-                            
-                           
-                            </div>
-                </div>
-            </div>
-            
-            <div id="tabs" class=" tabs">
-                <div class="drops">
-                <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                    <path d="M19 11L12 17L10.25 15.5M5 11L7.33333 13" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M5 7L12 13L13.75 11.5M19 7L16.6667 9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    <img src="./src/Comp_1.gif" alt="arrow down" width="24px" height="24px">
-                    <span>آموزش</span>
-              
-                    <div class="dropdown-content">
-                        <div id="menu tabs" class="category">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                <g>
-                                    <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                </g>
-                                </svg>
-                            <p>آوا شناسی</p>
-                            <div class="dropdown-content2">
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p> مقدماتی</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>متوسط</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>پیشرفته </p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                
-                               
-                                </div>
-                            
-                        </div>
-                        <hr>
-                        <div id="menu tabs" class="category">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                <g>
-                                    <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                </g>
-                                </svg>
-                            <p>مکالمه </p>
-                            <div class="dropdown-content2">
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p> مقدماتی</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>متوسط</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>پیشرفته </p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                
-                               
-                                </div>
-                            
-                        
-                            
-                        </div>
-                        <hr>
-                        <div id="menu tabs" class="category">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                <g>
-                                    <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                </g>
-                                </svg>
-                            <p> واژگان</p>
-                            <div class="dropdown-content2">
-                               <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p> مقدماتی</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>متوسط</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>پیشرفته </p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                
-                               
-                                </div>
-                        
-                            
-                        </div>
-                        <hr>
-                        <div id="menu tabs" class="category">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                <g>
-                                    <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                </g>
-                                </svg>
-                            <p> گرامر </p>
-                            <div class="dropdown-content12">
-                                <a href="./grammar.html" target="_self">
-                                    <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p> مقدماتی</p>
-                                
-                                    
-                                </div></a>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>متوسط</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>پیشرفته </p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                
-                               
-                                </div>
-                        
-                            
-                        </div>
-                        <hr>
-                        
-                        
-                       
-                        </div>
-            </div> 
+
+                <div class="offcanvas-body">
+ 
+<div id="input" class="input1">
+    <input type="text" name="text" placeholder="... جستجو" class="inputx">
+</div>
+
+
+<div class="accordion accordion-flushtop" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-buttonx collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+         <div>آموزش</div>
         
-           
-            </div>
-            
-        </div>
-        <div alt="mobile menu items" id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-          <div id="mobile-tabs" class="mobile-tabs">
-            
-                <input type="text" name="text" placeholder="... جستجو" class="input">
-                <div id="dictionary" class="dictionary">
-                    <div class="drops">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                            <path d="M19 11L12 17L10.25 15.5M5 11L7.33333 13" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5 7L12 13L13.75 11.5M19 7L16.6667 9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <img src="./src/Comp_1.gif" alt="arrow down" width="24px" height="24px">
-                           <span>دیکشنری</span>
-                    </div>
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <div class="rowx">
+                <div class="col-41">
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-itemx list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">آوا شناسی</a>
+                    <a class="list-group-itemx list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">مکالمه</a>
+                    <a class="list-group-itemx list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">واژگان</a>
+                    <a class="list-group-itemx list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">گرامر</a>
+                  </div>
                 </div>
-                <div id="assessment" class="assessment">
-                    <div class="drops">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                            <path d="M19 11L12 17L10.25 15.5M5 11L7.33333 13" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M5 7L12 13L13.75 11.5M19 7L16.6667 9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <img src="./src/Comp_1.gif" alt="arrow down" width="24px" height="24px">
-                            <span>آزمون</span>
-                            <div class="dropdown-content4">
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>آوا شناسی</p>
-                                    
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>آوا شناسی</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>آوا شناسی</p>
-                                
-                                    
-                                </div>
-                                <hr>
-                                <div id="menu tabs" class="category">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                        <g>
-                                            <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                        </g>
-                                        </svg>
-                                    <p>آوا شناسی</p>
-                                
-                                    
-                                </div>
-                                
-                               
-                                </div>
-                    </div>
-                </div>
-                <div id="blogs" class="blogs">
-                 <div class="drops">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 11L12 17L10.25 15.5M5 11L7.33333 13" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5 7L12 13L13.75 11.5M19 7L16.6667 9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <img src="./src/Comp_1.gif" alt="arrow down" width="24px" height="24px">
-                       <span>مقالات</span> 
-                        <div class="dropdown-content3">
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                                
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                           
-                            </div>
-                 </div>
-                </div>
-                
-                <div id="tabs" class=" tabs">
-                   
-                         
-                       
-                               
-                            <div class="drops">
-                        <div class="dropdown-content">
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                                <div class="dropdown-content2">
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>گرامر</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                    <hr>
-                                    
-                                    <div id="menu tabs" class="category">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                            <g>
-                                                <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                            </g>
-                                            </svg>
-                                        <p>آوا شناسی</p>
-                                    
-                                        
-                                    </div>
-                                   
-                                    </div>
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>گرامر </p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p> گرامر </p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                            <hr>
-                            
-                            <div id="menu tabs" class="category">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" width="800px" height="800px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-                                    <g>
-                                        <path d="M33.934,54.458l30.822,27.938c0.383,0.348,0.864,0.519,1.344,0.519c0.545,0,1.087-0.222,1.482-0.657   c0.741-0.818,0.68-2.083-0.139-2.824L37.801,52.564L64.67,22.921c0.742-0.818,0.68-2.083-0.139-2.824   c-0.817-0.742-2.082-0.679-2.824,0.139L33.768,51.059c-0.439,0.485-0.59,1.126-0.475,1.723   C33.234,53.39,33.446,54.017,33.934,54.458z"/>
-                                    </g>
-                                    </svg>
-                                <p>آوا شناسی</p>
-                            
-                                
-                            </div>
-                           
+                <div class="col-8">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="menu-tap">
+                            <button>
+                                مقدماتی
+                            </button>
+                            <button>
+                                متوسطه
+                            </button>
+                            <button>
+                                پیشرفته
+                            </button>
+                              
                         </div>
-                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none">
-                        <path d="M19 11L12 17L10.25 15.5M5 11L7.33333 13" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M5 7L12 13L13.75 11.5M19 7L16.6667 9" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <img src="./src/Comp_1.gif" alt="arrow down" width="24px" height="24px">
-                        <span>آموزش</span>        
-                    </button>      
-                </div> 
-          
-        
-            
-               
-                </div>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="mobile-list">
-                     <div class="option">s</div>
-                     <div class="option">s</div>
-                     <div class="option">s</div>
-                     <div class="option">s</div>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="menu-tap">
+                            <button>
+                                مقدماتی
+                            </button>
+                            <button>
+                                متوسطه
+                            </button>
+                            <button>
+                                پیشرفته
+                            </button>
+                              
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="menu-tap">
+                            <button>
+                                مقدماتی
+                            </button>
+                            <button>
+                                متوسطه
+                            </button>
+                            <button>
+                                پیشرفته
+                            </button>
+                              
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="menu-tap">
+                            <button>
+                                مقدماتی
+                            </button>
+                            <button>
+                                متوسطه
+                            </button>
+                            <button>
+                                پیشرفته
+                            </button>
+                              
+                        </div>
                     </div>
                   </div>
-            
-          </div>
+                </div>
+              </div>
         </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-buttonx collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          آزمون
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+            <div class="rowx">
+                <div class="col-41">
+                  <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-itemx list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">جامع</a>
+                    <a class="list-group-itemx list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">لیسنینگ</a>
+                    <a class="list-group-itemx list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">ریدینگ</a>
+                    <a class="list-group-itemx list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">رایتینگ</a>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        <div class="menu-tap">
+                            <button>
+                                مقدماتی
+                            </button>
+                            <button>
+                                متوسطه
+                            </button>
+                            <button>
+                                پیشرفته
+                            </button>
+                              
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <div class="menu-tap">
+                            <button>
+                                مقدماتی
+                            </button>
+                            <button>
+                                متوسطه
+                            </button>
+                            <button>
+                                پیشرفته
+                            </button>
+                              
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <div class="menu-tap">
+                            <button>
+                                مقدماتی
+                            </button>
+                            <button>
+                                متوسطه
+                            </button>
+                            <button>
+                                پیشرفته
+                            </button>
+                              
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        <div class="menu-tap">
+                            <button>
+                                مقدماتی
+                            </button>
+                            <button>
+                                متوسطه
+                            </button>
+                            <button>
+                                پیشرفته
+                            </button>
+                              
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class=" accordion-buttonx collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          دیکشنری(به زودی)
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+           .درحال توسعه </div>
+      </div>
+    </div>
+  </div>
+                </div>
+                <div class="offcanvas-footer">
+                    
+                </div>
+
+                </div>
+            </div>
+            </div>
+
+            
         </div>
         <div id="time" >
             <div id="clock" class="time"></div>
@@ -927,7 +264,7 @@ xmlns="http://www.w3.org/1999/xhtml" >
        <div id="gm-a" class="gm-a">
         <div class="gm-a-ti">
             <div class="ti-in">
-                <div>
+                <div id="girlsvg">
                     
                 </div>
                 <div class="in-gr">
@@ -1671,13 +1008,13 @@ xmlns="http://www.w3.org/1999/xhtml" >
       <div class="lottie5" id="lottie5"></div>
       
      </div>
-       <div id="social" class="social">
-        <img src="https://cdn.discordapp.com/attachments/1094366052516900874/1133433441480880188/supp_1.gif" width="48">
-    </div>
+     <div class="social" id="social"></div> 
        
     </div>   
    
                                           
         <script src="./script/script.js" async defer></script>
+        <script src="./script/lottie-main.js" async defer></script>
+        <script src="./script/girlsvg.js" async defer></script>
     </body>
 </html>
